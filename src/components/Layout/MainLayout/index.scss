@@ -4,13 +4,7 @@
   align-items: center;
 
   &__content {
-    width: 80%;
+    width: 85%;
     margin-top: 20px;
-
-    @media (max-width: 425px) {
-      width: calc(100% - 40px);
-      padding-left: 20px;
-      padding-right: 20px;
-    }
   }
 }
