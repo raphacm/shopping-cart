@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--inline {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
