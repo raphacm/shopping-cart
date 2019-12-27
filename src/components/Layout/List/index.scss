@@ -3,9 +3,10 @@
   justify-content: center;
 
   &__content {
-    width: 80%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 85%;
 
     &--inline {
       flex-direction: column;
