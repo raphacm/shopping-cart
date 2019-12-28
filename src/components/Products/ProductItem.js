@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useReducer } from "react";
 import withCard from "../Layout/Card";
+import productsReducers, { initialState } from "../../reducers/products";
 import "./index.scss";
 
 const ProductItem = item => {
-  console.log(item);
+  const [none, dispatch] = useReducer(productsReducers, initialState);
+
   const { product, min_price } = item;
   const { name, thumbnail_url, bgg_ranking, bgg_rating } = product;
+
   return (
     <div className="product">
       <img className="product__image" src={thumbnail_url} alt={name} />
@@ -47,7 +50,7 @@ const ProductItem = item => {
       </div>
       <button
         className="product__button product__button--primary"
-        onClick={() => null}
+        onClick={() => dispatch({ type: "ADD_TO_CART", payload: { item } })}
       >
         Add to Cart
       </button>
