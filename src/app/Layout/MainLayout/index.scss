@@ -1,0 +1,8 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    margin-top: 20px;
+  }
+}

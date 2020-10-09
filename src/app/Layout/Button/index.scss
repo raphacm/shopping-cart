@@ -1,0 +1,50 @@
+@import "../../styles/base.scss";
+
+.btn {
+  width: 100%;
+  background-color: $black-lighter;
+  color: $black-dark;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;  
+
+  &:hover {
+    background-color: $black-light;
+    transition: ease;
+    transition-duration: 0.5s;
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-dark;
+      transition: ease;
+      transition-duration: 0.5s;
+    }
+  }
+
+  &--warning {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $yellow-light;
+      transition: ease;
+      transition-duration: 0.5s;
+    }
+  }
+
+  &--danger {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      background-color: $red-dark;
+      transition: ease;
+      transition-duration: 0.5s;
+    }
+  }
+}

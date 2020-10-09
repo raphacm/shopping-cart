@@ -1,0 +1,14 @@
+@import "../../styles/base.scss";
+
+.card {
+  border: solid 1px $black-lighter;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+
+  &:hover {
+    box-shadow: $black-lighter 2px 2px 10px;
+    transition: ease;
+    transition-duration: 0.5s;
+  }
+}
